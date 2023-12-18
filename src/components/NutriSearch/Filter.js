@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
 
-const Filter = ({method}) => {
+const Filter = ({ method }) => {
   //doctor data
   let [data, setData] = useState([]);
   //filters
@@ -13,21 +13,20 @@ const Filter = ({method}) => {
     locality: "Andheri",
   });
 
-  useEffect(()=>{
+  useEffect(() => {
     method(filter);
- },[]);
+  }, []);
 
- //updating the filters
- const updateFilters = (e) => {
-   setFilter((prevObj) => {
-     return { ...prevObj, [e.target.name]: e.target.value };
-   });
- };
+  //updating the filters
+  const updateFilters = (e) => {
+    setFilter((prevObj) => {
+      return { ...prevObj, [e.target.name]: e.target.value };
+    });
+  };
 
- const callMethod = ()=> {
-   method(filter);
- }
-
+  const callMethod = () => {
+    method(filter);
+  };
 
   return (
     <div className="w-[85%] mt-5 mx-auto bg-primary-blue p-4 text-dark-100 rounded-lg flex justify-between">
@@ -113,34 +112,17 @@ const Filter = ({method}) => {
           className="rounded-lg p-2"
           onChange={updateFilters}
         >
-          <option value="Andheri">Andheri</option>
-          <option value="Bandra">Bandra</option>
-          <option value="Borivali">Borivali</option>
-          <option value="Dahisar">Dahisar</option>
-          <option value="Goregaon">Goregaon</option>
-          <option value="Jogeshwari">Jogeshwari</option>
-          <option value="Kandivali">Kandivali</option>
-          <option value="Malad">Malad</option>
-          <option value="Mirabhayandar">Mira Bhayandar</option>
-          <option value="Santacruz">Santacruz</option>
-          <option value="Vileparle">Vile Parle</option>
-          <option value="Bhandup">Bhandup</option>
-          <option value="Ghatkopar">Ghatkopar</option>
-          <option value="Kurla">Kurla</option>
-          <option value="Mulund">Mulund</option>
-          <option value="Powai">Powai</option>
-          <option value="Thane">Thane</option>
-          <option value="Chembur">Chembur</option>
-          <option value="Matunga">Matunga</option>
-          <option value="Dadar">Dadar</option>
-          <option value="Kalbadevi">Kalbadevi</option>
-          <option value="Marinelines">Marine Lines</option>
-          <option value="Parel">Parel</option>
-          <option value="Mahalaxmi">Mahalaxmi</option>
-          <option value="Sion">Sion</option>
-          <option value="Worli">Worli</option>
-          <option value="Colaba">Colaba</option>
-          <option value="Navimumbai">Navi Mumbai</option>
+          <option value="Central Delhi">Central Delhi</option>
+          <option value="East Delhi">East Delhi</option>
+          <option value="New Delhi">New Delhi</option>
+          <option value="North Delhi">North Delhi</option>
+          <option value="North East Delhi">North East Delhi</option>
+          <option value="North West Delhi">North West Delhi</option>
+          <option value="Shahdara">Shahdara</option>
+          <option value="South Delhi">South Delhi</option>
+          <option value="South East Delhi">South East Delhi</option>
+          <option value="South West Delhi">South West Delhi</option>
+          <option value="West Delhi">West Delhi</option>
         </select>
       </div>
       <button
@@ -150,7 +132,6 @@ const Filter = ({method}) => {
       >
         Apply Filter
       </button>
-
     </div>
   );
 };

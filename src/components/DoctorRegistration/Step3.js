@@ -144,7 +144,7 @@ const Step3 = forwardRef((props, ref) => {
 
       <div className="mt-3 w-full mx-2 flex-1">
         <label className="font-bold h-6 mt-3 text-gray-500 text-xs leading-8 uppercase">
-          Locality (In Mumbai)
+          Locality (In Delhi)
         </label>
         <div className="bg-white my-2 p-1 flex border border-gray-200 rounded">
           <select
@@ -155,199 +155,70 @@ const Step3 = forwardRef((props, ref) => {
             <option>Select Locality</option>
 
             <option
-              value="Andheri"
-              selected={userData.locality === "Andheri" ? true : false}
+              value="Central Delhi"
+              selected={userData.locality === "Central Delhi" ? true : false}
             >
-              Andheri
+              Central Delhi
             </option>
-
             <option
-              value="Bandra"
-              selected={userData.locality === "Bandra" ? true : false}
+              value="East Delhi"
+              selected={userData.locality === "East Delhi" ? true : false}
             >
-              Bandra
+              East Delhi
             </option>
-
             <option
-              value="Borivali"
-              selected={userData.locality === "Borivali" ? true : false}
+              value="New Delhi"
+              selected={userData.locality === "New Delhi" ? true : false}
             >
-              Borivali
+              New Delhi
             </option>
-
             <option
-              value="Dahisar"
-              selected={userData.locality === "Dahisar" ? true : false}
+              value="North Delhi"
+              selected={userData.locality === "North Delhi" ? true : false}
             >
-              Dahisar
+              North Delhi
             </option>
-
             <option
-              value="Goregaon"
-              selected={userData.locality === "Goregaon" ? true : false}
+              value="North East Delhi"
+              selected={userData.locality === "North East Delhi" ? true : false}
             >
-              Goregaon
+              North East Delhi
             </option>
-
             <option
-              value="Jogeshwari"
-              selected={userData.locality === "Jogeshwari" ? true : false}
+              value="North West Delhi"
+              selected={userData.locality === "North West Delhi" ? true : false}
             >
-              Jogeshwari
+              North West Delhi
             </option>
-
             <option
-              value="Kandivali"
-              selected={userData.locality === "Kandivali" ? true : false}
+              value="Shahdara"
+              selected={userData.locality === "Shahdara" ? true : false}
             >
-              Kandivali
+              Shahdara
             </option>
-
             <option
-              value="Malad"
-              selected={userData.locality === "Malad" ? true : false}
+              value="South Delhi"
+              selected={userData.locality === "South Delhi" ? true : false}
             >
-              Malad
+              South Delhi
             </option>
-
             <option
-              value="Mira-Bhayandar"
-              selected={userData.locality === "Mira-Bhayandar" ? true : false}
+              value="South East Delhi"
+              selected={userData.locality === "South East Delhi" ? true : false}
             >
-              Mira-Bhayandar
+              South East Delhi
             </option>
-
             <option
-              value="Santacruz"
-              selected={userData.locality === "Santacruz" ? true : false}
+              value="South West Delhi"
+              selected={userData.locality === "South West Delhi" ? true : false}
             >
-              Santacruz
+              South West Delhi
             </option>
-
             <option
-              value="Vile Parle"
-              selected={userData.locality === "Vile Parle" ? true : false}
+              value="West Delhi"
+              selected={userData.locality === "West Delhi" ? true : false}
             >
-              Vile Parle
-            </option>
-
-            <option
-              value="Bhandup"
-              selected={userData.locality === "Bhandup" ? true : false}
-            >
-              Bhandup
-            </option>
-
-            <option
-              value="Ghatkopar"
-              selected={userData.locality === "Ghatkopar" ? true : false}
-            >
-              Ghatkopar
-            </option>
-
-            <option
-              value="Kurla"
-              selected={userData.locality === "Kurla" ? true : false}
-            >
-              Kurla
-            </option>
-
-            <option
-              value="Mulund"
-              selected={userData.locality === "Mulund" ? true : false}
-            >
-              Mulund
-            </option>
-
-            <option
-              value="Powai"
-              selected={userData.locality === "Powai" ? true : false}
-            >
-              Powai
-            </option>
-
-            <option
-              value="Thane"
-              selected={userData.locality === "Thane" ? true : false}
-            >
-              Thane
-            </option>
-
-            <option
-              value="Chembur"
-              selected={userData.locality === "Chembur" ? true : false}
-            >
-              Chembur
-            </option>
-
-            <option
-              value="Matunga"
-              selected={userData.locality === "Matunga" ? true : false}
-            >
-              Matunga
-            </option>
-
-            <option
-              value="Dadar"
-              selected={userData.locality === "Dadar" ? true : false}
-            >
-              Dadar
-            </option>
-
-            <option
-              value="Kalbadevi"
-              selected={userData.locality === "Kalbadevi" ? true : false}
-            >
-              Kalbadevi
-            </option>
-
-            <option
-              value="Marine Lines"
-              selected={userData.locality === "Marine Lines" ? true : false}
-            >
-              Marine Lines
-            </option>
-
-            <option
-              value="Parel"
-              selected={userData.locality === "Parel" ? true : false}
-            >
-              Parel
-            </option>
-
-            <option
-              value="Mahalaxmi"
-              selected={userData.locality === "Mahalaxmi" ? true : false}
-            >
-              Mahalaxmi
-            </option>
-
-            <option
-              value="Sion"
-              selected={userData.locality === "Sion" ? true : false}
-            >
-              Sion
-            </option>
-
-            <option
-              value="Worli"
-              selected={userData.locality === "Worli" ? true : false}
-            >
-              Worli
-            </option>
-
-            <option
-              value="Colaba"
-              selected={userData.locality === "Colaba" ? true : false}
-            >
-              Colaba
-            </option>
-
-            <option
-              value="Navi Mumbai"
-              selected={userData.locality === "Navi Mumbai" ? true : false}
-            >
-              Navi Mumbai
+              West Delhi
             </option>
           </select>
         </div>
